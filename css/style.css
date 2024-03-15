@@ -3,4 +3,122 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+/* app */
+.container {
+  width: 100%;
+  min-height: 100dvh;
+  background-color: rgba(255, 51, 102, 0.2);
+  padding: 50px;
+}
+
+.todo-app {
+  background: #ffffff;
+  width: 40%;
+  margin: auto;
+  padding: 20px 32px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.todo-app header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 120px;
+}
+
+/* input */
+.input-section {
+  display: flex;
+  border-radius: 80px;
+  border: 1px solid #ff3366;
+}
+
+#input-box {
+  width: 75%;
+  padding: 12px;
+  border-radius: 80px;
+  border: none;
+}
+
+#input-box:focus {
+  outline: none;
+}
+
+/* bouton ajouter */
+.add-btn {
+  width: 25%;
+  padding: 12px;
+  background-color: #ff3366;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 80px;
+  border: 1px solid #ff3366;
+}
+
+.add-btn:hover {
+  background-color: #ffffff;
+  color: #ff3366;
+  transition: 200ms ease;
+}
+
+/* liste de tâches */
+.list-container li {
+  list-style: none;
+  padding: 24px 40px;
+  cursor: pointer;
+  position: relative;
+}
+
+.list-container li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  background-image: url(../img/journal.svg);
+  background-size: cover;
+  background-position: center;
+  top: 20px;
+  left: 0px;
+  transition: 200ms;
+}
+
+/* si tâche checked */
+.list-container li.checked {
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+
+.list-container li.checked::before {
+  background-image: url(../img/journal-check.svg);
+  opacity: 0.75;
+}
+
+/* corbeille icône */
+.list-container li span {
+  background-image: url(../img/trash.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+.list-container li span:hover {
+  background-image: url(../img/trash-hover.svg);
+  transition: 300ms;
 }

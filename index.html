@@ -3,10 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo List App</title>
+    <title>10MW - Todo List App</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Quicksand font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
+    <main class="container">
+      <section class="todo-app">
+        <header>
+          <img
+            class="logo"
+            src="/img/logo_10mw.png"
+            alt="logo agence web 10mentionweb"
+          />
+          <h1>Todo List App</h1>
+        </header>
+        <section class="input-section">
+          <input type="text" id="input-box" placeholder="Ajouter une tâche" />
+          <button class="add-btn" onclick="addTask()">Ajouter</button>
+        </section>
+        <ul class="list-container">
+          <!-- <li class="checked">T1</li>
+          <li>T2</li>
+          <li>T3</li> -->
+        </ul>
+      </section>
+    </main>
+    <!-- script js -->
     <script src="script/script.js"></script>
   </body>
 </html>
