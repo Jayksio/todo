@@ -23,6 +23,7 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
+/* utilisation de l'objet Event */
 listContainer.addEventListener("click", function (e) {
     /* si je clique sur la tâche */
     if (e.target.tagName === "LI") {
